@@ -7,6 +7,7 @@ import { QrCode, BarChart3, Gift, Building2, Smartphone, Users, TrendingUp, Arro
 import QRScanner from "@/components/QRScanner";
 import AnalyticsDashboard from "@/components/AnalyticsDashboard";
 import InteractiveAction from "@/components/InteractiveAction";
+import KardiverseAction from "@/components/KardiverseAction";
 import SponsorDashboard from "@/components/SponsorDashboard";
 import heroImage from "@/assets/hero-analytics.jpg";
 
@@ -253,6 +254,18 @@ const Index = () => {
                 </TabsContent>
 
                 <TabsContent value="action" className="mt-8">
+                  {/* KARDIVERSE Mockup */}
+                  <div className="mb-16">
+                    <div className="text-center mb-8">
+                      <h3 className="text-2xl font-bold mb-4">KARDIVERSE Campaign Template</h3>
+                      <p className="text-muted-foreground max-w-2xl mx-auto">
+                        Recreated from your mockup - futuristic gaming aesthetic with neon effects and interactive elements
+                      </p>
+                    </div>
+                    <KardiverseAction />
+                  </div>
+                  
+                  {/* Original Template */}
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                     <div className="space-y-4">
                       <h3 className="text-2xl font-bold">Interactive Action Templates</h3>

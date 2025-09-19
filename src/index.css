@@ -6,9 +6,9 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --background: 250 100% 98%;
-    --foreground: 224 15% 15%;
+    /* Core Brand Colors - KARDIVERSE Dark Theme */
+    --background: 210 50% 8%;
+    --foreground: 185 100% 90%;
 
     --card: 0 0% 100%;
     --card-foreground: 224 15% 15%;
@@ -16,10 +16,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 224 15% 15%;
 
-    /* Primary: Professional Blue */
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
-    --primary-hover: 217 91% 55%;
+    /* Primary: Professional Blue -> KARDIVERSE Neon Cyan */
+    --primary: 185 100% 50%;
+    --primary-foreground: 0 0% 10%;
+    --primary-hover: 185 100% 55%;
 
     /* Secondary: Clean Gray */
     --secondary: 210 17% 95%;
@@ -52,18 +52,20 @@
     --input: 215 20% 90%;
     --ring: 217 91% 60%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(217 91% 45%));
+    /* Gradients - KARDIVERSE Neon Effects */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(185 100% 65%));
     --gradient-success: linear-gradient(135deg, hsl(var(--accent)), hsl(142 71% 35%));
     --gradient-analytics: linear-gradient(135deg, hsl(var(--analytics-primary)), hsl(var(--analytics-secondary)));
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%), hsl(262 83% 58%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 17% 98%));
+    --gradient-hero: radial-gradient(ellipse at center, hsl(210 50% 8%) 0%, hsl(210 60% 5%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(210 50% 10%), hsl(210 50% 12%));
+    --gradient-neon: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(185 100% 65%) 100%);
 
-    /* Shadows */
-    --shadow-soft: 0 2px 8px -2px hsl(var(--primary) / 0.1);
-    --shadow-medium: 0 8px 25px -8px hsl(var(--primary) / 0.15);
-    --shadow-strong: 0 16px 40px -12px hsl(var(--primary) / 0.2);
-    --shadow-glow: 0 0 30px hsl(var(--accent) / 0.3);
+    /* Shadows - KARDIVERSE Neon Glow */
+    --shadow-soft: 0 2px 8px -2px hsl(var(--primary) / 0.3);
+    --shadow-medium: 0 8px 25px -8px hsl(var(--primary) / 0.4);
+    --shadow-strong: 0 16px 40px -12px hsl(var(--primary) / 0.6);
+    --shadow-glow: 0 0 60px hsl(var(--primary) / 0.8);
+    --shadow-neon: 0 0 20px hsl(var(--primary) / 0.9);
 
     --radius: 12px;
 
@@ -174,6 +176,10 @@
   
   .shadow-glow {
     box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-neon {
+    box-shadow: var(--shadow-neon);
   }
 
   /* Animation Classes */
